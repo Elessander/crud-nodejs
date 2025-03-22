@@ -58,7 +58,7 @@ const Form = ({onEdit}) => {
                 <Label>Preço</Label>
                 <Input name="preco" type="decimal"/>
             </InputArea>
-            <Button type="submit">Salvar</Button>
+            <Button type="submit">Adicionar</Button>
         </FormContainer>
     );
 };
