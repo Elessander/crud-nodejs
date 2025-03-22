@@ -40,8 +40,8 @@ function App() {
     <>
       <Container>
         <Title>Produtos</Title>
-        <Form />
-        <Grid products={products}/>
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getProducts={getProducts}/>
+        <Grid products={products} setProducts={setProducts} setOnEdit={setOnEdit}/>
       </Container>
       <ToastContainer autoClose={3000} position="bottom-left" />
       <GlobalStyle />

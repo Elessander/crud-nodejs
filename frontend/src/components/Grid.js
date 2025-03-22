@@ -41,7 +41,26 @@ export const Td = styled.th`
     }
 `;
 
-const Grid = ({ products }) => {
+const Grid = ({ products, setProducts, setOnEdit }) => {
+    const handleEdit = (item) => {
+        setOnEdit(item);
+    };
+
+    const handleDelete = async (id) => {
+        await axios
+        .delete("http://localhost:8800/" + id)
+        .then(({ data }) => {
+            const newArray = products.filter((product) => product.id !== id);
+
+            setProducts(newArray);
+            toast.success(data);
+        })
+        .catch(({ data }) => toast.error(data));
+
+    setOnEdit(null);
+    };
+
+
     return (
         <Table>
             <Thead>
@@ -62,10 +81,10 @@ const Grid = ({ products }) => {
                         <Td width="30%">{item.descricao}</Td>
                         <Td width="30%">{item.preco}</Td>
                         <Td alignCenter width="5%">
-                            <FaEdit />
+                            <FaEdit onClick={() => handleEdit(item)}/>
                         </Td>
                         <Td alignCenter width="5%">
-                            <FaTrash />
+                            <FaTrash onClick={() => handleDelete(item.id)}/>
                         </Td>
                     </Tr>
                 ))}
