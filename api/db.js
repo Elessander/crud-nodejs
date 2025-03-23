@@ -46,8 +46,3 @@ db.connect((err) => {
     });
   });
 });
-
-process.on('exit', () => {
-  db.end();
-  console.log('Conexão com MySQL encerrada');
-});
