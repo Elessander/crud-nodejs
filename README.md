@@ -32,16 +32,13 @@ npm start
 
 ## Instalar Dependências(FrontEnd)
 
-Após configurar as dependências da api digite os seguintes códigos:
+Após configurar as dependências da api abra outro terminar  e digite os seguintes códigos:
 
-1. Volte para o diretório raiz:
-cd ..
-
-2. Acesse o diretório do FrontEnd
+1. Acesse o diretório do FrontEnd
 cd api
 
-3. Instale as dependências:
+2. Instale as dependências:
 npm install
 
-4. Inicie o projeto:
+3. Inicie o projeto:
 npm start
