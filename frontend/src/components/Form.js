@@ -4,39 +4,55 @@ import styled from "styled-components";
 import { toast } from "react-toastify";
 
 const FormContainer = styled.form`
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 5px #ccc;
-    border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o conteúdo */
 `;
 
 const InputArea = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
 `;
 
 const Input = styled.input`
-    width: 120px;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 40px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-color: #2c732d;
+  }
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+  font-weight: bold;
+  margin-bottom: 8px;
+`;
 
 const Button = styled.button`
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color: #2c732d;
-    color: white;
-    height: 42px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+
+  &:hover {
+    background: #0056b3;
+  }
 `;
 
 const Form = ({ getProducts, onEdit, setOnEdit }) => {
@@ -115,7 +131,7 @@ const Form = ({ getProducts, onEdit, setOnEdit }) => {
                 <Label>Preço</Label>
                 <Input name="preco" type="decimal"/>
             </InputArea>
-            <Button type="submit">Adicionar</Button>
+            <Button type="submit">Salvar</Button>
         </FormContainer>
     );
 };
