@@ -26,11 +26,11 @@ const Tr = styled.tr`
 
 const Th = styled.th`
   padding: 12px;
-
 `;
 
 const Td = styled.td`
   padding: 12px;
+  text-align: center;
 `;
 
 const IconButton = styled.button`
@@ -54,14 +54,21 @@ const IconButton = styled.button`
 `;
 
 const Grid = ({ products, setProducts, setOnEdit }) => {
+  const handleEdit = (item) => {
+    setOnEdit(item);
+  };
+
   const handleDelete = async (id) => {
-    try {
-      await axios.delete(`http://localhost:8800/${id}`);
-      setProducts((prev) => prev.filter((item) => item.id !== id));
-      toast.success("Produto removido com sucesso!");
-    } catch (error) {
-      toast.error("Erro ao deletar o produto.");
-    }
+    await axios
+      .delete("http://localhost:8800/" + id)
+      .then(({ data }) => {
+        const newArray = products.filter((product) => product.id !== id);
+        setProducts(newArray);
+        toast.success(data);
+      })
+      .catch(({ data }) => toast.error(data));
+
+    setOnEdit(null);
   };
 
   return (
@@ -83,7 +90,7 @@ const Grid = ({ products, setProducts, setOnEdit }) => {
             <Td>{item.descricao}</Td>
             <Td>R$ {item.preco}</Td>
             <Td>
-              <IconButton className="edit" onClick={() => setOnEdit(item)}>
+              <IconButton className="edit" onClick={() => handleEdit(item)}>
                 <FaEdit />
               </IconButton>
               <IconButton className="delete" onClick={() => handleDelete(item.id)}>
