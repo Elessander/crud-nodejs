@@ -8,15 +8,15 @@ FrontEnd: React - Utilizado para desenvolver a interface de usuário.
 
 Banco de Dados: MySQL - Utilizado para armazenar as informações e realizar operações de consulta, inserção, atualização e exclusão.
 
-#Dependências Utilizadas:
+# Dependências Utilizadas:
 
-##BackEnd (Node.js)
+## BackEnd (Node.js)
 express – Framework minimalista para criação do servidor e gerenciamento de rotas.
 cors – Permite a comunicação entre o FrontEnd (porta 3000) e o BackEnd (porta 8800).
 mysql – Utilizado para conectar o Node.js ao banco de dados MySQL.
 nodemon – Dependência de desenvolvimento que facilita o processo de desenvolvimento, reiniciando automaticamente o servidor sempre que há alterações no código, evitando a necessidade de reiniciar manualmente.
 
-##FrontEnd (React)
+## FrontEnd (React)
 axios – Utilizado para realizar requisições HTTP entre o FrontEnd e o BackEnd.
 react-toastify – Utilizado para exibir notificações amigáveis de sucesso ou erro.
 @fortawesome/react-fontawesome – Usado para os ícones de edição (faEdit) e exclusão (faTrash).
