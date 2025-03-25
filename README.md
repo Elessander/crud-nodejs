@@ -11,10 +11,10 @@ Banco de Dados: MySQL - Utilizado para armazenar as informações e realizar ope
 # Dependências Utilizadas:
 
 ## BackEnd (Node.js)
-express – Framework minimalista para criação do servidor e gerenciamento de rotas.
-cors – Permite a comunicação entre o FrontEnd (porta 3000) e o BackEnd (porta 8800).
-mysql – Utilizado para conectar o Node.js ao banco de dados MySQL.
-nodemon – Dependência de desenvolvimento que facilita o processo de desenvolvimento, reiniciando automaticamente o servidor sempre que há alterações no código, evitando a necessidade de reiniciar manualmente.
+express – Framework minimalista para criação do servidor e gerenciamento de rotas. <br/>
+cors – Permite a comunicação entre o FrontEnd (porta 3000) e o BackEnd (porta 8800). <br/>
+mysql – Utilizado para conectar o Node.js ao banco de dados MySQL. <br/>
+nodemon – Dependência de desenvolvimento que facilita o processo de desenvolvimento, reiniciando automaticamente o servidor sempre que há alterações no código, evitando a necessidade de reiniciar manualmente. <br/>
 
 ## FrontEnd (React)
 axios – Utilizado para realizar requisições HTTP entre o FrontEnd e o BackEnd.
