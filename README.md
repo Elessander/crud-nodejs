@@ -10,7 +10,7 @@ Banco de Dados: MySQL - Utilizado para armazenar as informações e realizar ope
 
 #Dependências Utilizadas:
 
-##%BackEnd (Node.js)
+##BackEnd (Node.js)
 express – Framework minimalista para criação do servidor e gerenciamento de rotas.
 cors – Permite a comunicação entre o FrontEnd (porta 3000) e o BackEnd (porta 8800).
 mysql – Utilizado para conectar o Node.js ao banco de dados MySQL.
