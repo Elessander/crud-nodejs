@@ -17,11 +17,11 @@ mysql – Utilizado para conectar o Node.js ao banco de dados MySQL. <br/>
 nodemon – Dependência de desenvolvimento que facilita o processo de desenvolvimento, reiniciando automaticamente o servidor sempre que há alterações no código, evitando a necessidade de reiniciar manualmente. <br/>
 
 ## FrontEnd (React)
-axios – Utilizado para realizar requisições HTTP entre o FrontEnd e o BackEnd.
-react-toastify – Utilizado para exibir notificações amigáveis de sucesso ou erro.
-@fortawesome/react-fontawesome – Usado para os ícones de edição (faEdit) e exclusão (faTrash).
-styled-components – Utilizado para estilizar os componentes de forma modular e escalável.
-react – Biblioteca principal para a construção da interface de usuário.
+axios – Utilizado para realizar requisições HTTP entre o FrontEnd e o BackEnd. <br/>
+react-toastify – Utilizado para exibir notificações amigáveis de sucesso ou erro. <br/>
+@fortawesome/react-fontawesome – Usado para os ícones de edição (faEdit) e exclusão (faTrash). <br/>
+styled-components – Utilizado para estilizar os componentes de forma modular e escalável. <br/>
+react – Biblioteca principal para a construção da interface de usuário. <br/>
 
 # Como Iniciar o Repositório
 
