@@ -18,7 +18,7 @@ ALTER USER 'nome-do-usuario'@'localhost' IDENTIFIED WITH mysql_native_password B
 
 ## Instalar Dependências(API)
 
-No terminal digite os seguintes códigos:
+Primeiramente vá para o arquivo db.js para alterar as configurações do seu usuário e senha para e depois vá para o terminal e insira os seguintes códigos:
 
 1. Navegue até o Diretório da api:
 cd api
@@ -29,10 +29,11 @@ npm install
 3. Inicie o projeto:
 npm start
 
+Após o npm start ele deverá criar o banco automaticamente com as tabelas caso o mesmo não exista.
 
 ## Instalar Dependências(FrontEnd)
 
-Após configurar as dependências da api abra outro terminar  e digite os seguintes códigos:
+Após configurar as dependências da api abra outro terminal  e digite os seguintes códigos:
 
 1. Acesse o diretório do FrontEnd
 cd api
@@ -42,3 +43,5 @@ npm install
 
 3. Inicie o projeto:
 npm start
+
+Por fim ele abrirá uma janela onde você verá o crud e poderá adicionar, deletar e editar produtos.
